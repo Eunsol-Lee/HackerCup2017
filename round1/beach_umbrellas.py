@@ -1,6 +1,3 @@
-import math
-
-
 cache = {}
 
 def calc(n, blank):
