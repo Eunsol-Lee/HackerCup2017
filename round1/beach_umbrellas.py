@@ -17,15 +17,10 @@ def calc(n, blank):
 
     for x in range(blank+1,n+blank+1):
         value *= x
-        if x == d0:
-            value /= n
-        if x == d1:
-            value /= (n-1)
 
-        value %= 1000000007
-
+    value = value // (n*(n-1))
+    value %= 1000000007
     cache[blank] = value
-
     return value
 
 
