@@ -44,8 +44,6 @@ def solve():
 
     result = 0
 
-    cache = {}
-
     for i in range(n):
         for j in range(i + 1, n):
             result += 2*calc(n, (m-1)-(total-x[i]-x[j]))
@@ -56,4 +54,5 @@ def solve():
 T = int(input())
 
 for i in range(1, T+1):
+    cache = {}
     print ('Case #%d: %d'% (i, solve()))

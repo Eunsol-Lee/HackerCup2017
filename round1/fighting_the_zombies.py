@@ -1,6 +1,5 @@
 t = int(input())
 
-
 x = [[0] * 100 for _ in range(200)]
 
 def solve():
@@ -29,7 +28,6 @@ def solve():
             largest = max(largest, len(p))
 
     return largest
-
 
 for i in range(1, t+1):
     print ('Case #%d: %d' % (i, solve()))
